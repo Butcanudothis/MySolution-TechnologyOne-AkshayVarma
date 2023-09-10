@@ -44,6 +44,17 @@ To get started with this web application, follow the steps below:
 
 5. Open your web browser and visit [http://localhost:5121](http://localhost:5121) to access the application.
 
+
+6. testing the application:
+
+clone the repository and navigate to the project directory:
+
+   ```shell
+   git clone https://github.com/Butcanudothis/MySolution-TechnologyOne-AkshayVarma
+    cd MySolution-TechnologyOne-AkshayVarma/MyWebApp
+   dotnet test
+   ```
+
 ## Usage
 
 - Enter a numerical currency value (e.g., "123.45") into the input field.
