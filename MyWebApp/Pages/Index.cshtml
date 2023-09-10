@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="text-center">
+    <h1 class="display-4">Convert here!</h1>
+
+    <form method="post">
+        <div class="mb-3">
+            <label for="inputNumber" class="form-label">Enter numerical currency</label>
+            <input type="text" class="form-control" id="inputNumber" name="inputNumber" placeholder="Enter a number">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br />
+
+    <div id="result"></div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
