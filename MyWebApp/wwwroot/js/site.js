@@ -18,13 +18,19 @@ $(document).ready(function () {
             return false;
         }
 
+        // form validation for zero
+        if (parseInt($('#inputNumber').val()) == 0) {
+            $('#result').html('Form not submitted : Please enter a non-zero number');
+            return false;
+        }
+
         $.ajax({
             type: 'POST',
             url: '/Index', // URL to the Razor Page
             data: $(this).serialize(),
             success: function (response) {
                 // Update the result container with the JSON data
-                
+
                 $('#result').html( response.output.toUpperCase() );
             },
             error: function (error) {
